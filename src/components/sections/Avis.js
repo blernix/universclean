@@ -21,7 +21,7 @@ export default function Avis() {
   }, [avis]);
 
   return (
-    <section className="bg-gray-900 py-12 px-6">
+    <section className="bg-neutral-900 py-12 px-6">
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-3xl font-bold text-white text-center mb-8">💬 Avis Clients</h2>
 

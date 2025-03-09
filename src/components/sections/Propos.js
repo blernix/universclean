@@ -1,11 +1,11 @@
 export default function Propos() {
     return (
-      <section id="propos" className="bg-gray-900 py-12 px-6 rounded-lg ">
+      <section id="propos" className="bg-neutral-900 py-12 px-6 rounded-lg ">
         <div className="container mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold text-white">À propos d&apos;Univers Clean</h2>
           <p className="text-lg text-white mt-4">
             Bien plus qu’un simple service de nettoyage, <strong>Univers Clean</strong> est une référence en <strong>préparation esthétique haut de gamme</strong>.  
-            Spécialisés dans le <strong>détailing automobile, le nettoyage de canapés et de terrasses</strong>, nous apportons un soin méticuleux à chaque intervention.
+            Spécialisés dans le <strong>detailing automobile, le nettoyage de canapés et de terrasses</strong>, nous apportons un soin méticuleux à chaque intervention.
           </p>
   
           <p className="text-lg text-white mt-4">

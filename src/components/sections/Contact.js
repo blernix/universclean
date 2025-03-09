@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="py-12 px-6 bg-gray-900 shadow-md rounded-lg">
+    <section className="py-12 px-6 bg-neutral-900 shadow-md rounded-lg">
       <div className="container mx-auto max-w-5xl flex flex-col md:flex-row items-center md:items-start gap-8">
         {/* Texte à gauche */}
         <div className="w-full md:w-1/2 text-left">

@@ -11,7 +11,8 @@ export default {
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)',
-			header: '#0d1216'
+			header: '#0d1216',
+			body: '#191c22'
 
   		},
   		borderRadius: {

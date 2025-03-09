@@ -2,7 +2,7 @@ import { Facebook, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-4 ">
+    <footer className="bg-neutral-900 text-white py-4 ">
       <div className="container mx-auto flex flex-col items-center">
         <p className="text-sm">© {new Date().getFullYear()} - Tous droits réservés</p>
         <div className="flex space-x-4 mt-2">
