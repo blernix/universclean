@@ -14,7 +14,7 @@ export default function Contact() {
               href="https://www.google.com/maps/search/?api=1&query=6+rue+de+la+Bernache,+Samoreau"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-white hover:underline"
             >
               📍 Voir sur Google Maps
             </a>
@@ -24,10 +24,10 @@ export default function Contact() {
           <div className="mb-6">
             <h3 className="text-xl font-semibold text-white">Contact</h3>
             <p>
-              📞 <a href="tel:+33782364263" className="text-blue-500 hover:underline">07 82 36 42 63</a>
+              📞 <a href="tel:+33782364263" className="text-white hover:underline">07 82 36 42 63</a>
             </p>
             <p>
-              📧 <a href="mailto:universclean77@gmail.com" className="text-blue-500 hover:underline">universclean77@gmail.com</a>
+              📧 <a href="mailto:universclean77@gmail.com" className="text-white hover:underline">universclean77@gmail.com</a>
             </p>
           </div>
 

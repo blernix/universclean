@@ -59,6 +59,10 @@ export const services = [
       "Injection/extraction pour éliminer les acariens",
       "Protection anti-taches (en option)",
     ],
+    beforeAfter: {
+      before: "/canape_avant.png",
+      after: "/canape_apres.png",
+    },
   },
   {
     title: "Nettoyage Terrasse",
@@ -70,5 +74,9 @@ export const services = [
       "Brossage des joints et retrait des salissures incrustées",
       "Rinçage et séchage",
     ],
+    beforeAfter: {
+      before: "/terasse_avant.png",
+      after: "/terasse_apres.png",
+    },
   },
 ];
