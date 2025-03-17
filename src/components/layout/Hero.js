@@ -9,7 +9,7 @@ export default function Hero() {
       <Parallax speed={-10} className="absolute inset-0 w-full h-full">
         <motion.div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/photo_hero.jpg')" }}
+          style={{ backgroundImage: "url('/photo_hero.webp')" }}
           initial={{ opacity: 0, filter: "brightness(0.4)" }}
           animate={{ opacity: 1, filter: "brightness(1)" }}
           transition={{ duration: 1.5, ease: "easeOut" }}
@@ -26,7 +26,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1.2 }} // Décalage pour apparaître après l’image
         className="relative z-10 text-center"
       >
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+        <h1 className="text-2xl md:text-5xl font-bold tracking-tight">
           L'excellence du nettoyage haut de gamme
         </h1>
         <p className="text-lg text-gray-300 mt-4">Automobile • Canapé • Terrasse</p>

@@ -9,7 +9,7 @@ export default function Propos() {
           </p>
   
           <p className="text-lg text-white mt-4">
-            Forts d’une formation spécialisée en detailing et d’une passion pour la perfection, nous utilisons des <strong>produits professionnels et un matériel adapté</strong>  
+            Forts d’une formation spécialisée en detailing et d’une passion pour la perfection, nous utilisons des <strong>produits professionnels et un matériel adapté </strong>  
             pour offrir un rendu impeccable. Chaque prestation est réalisée <strong>sur mesure</strong>, avec un souci du détail incomparable.
           </p>
   

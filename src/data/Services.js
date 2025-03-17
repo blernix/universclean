@@ -11,8 +11,8 @@ export const services = [
       "Parfum d'ambiance",
     ],
     beforeAfter: {
-      before: "/golf_avant.jpg",
-      after: "/golf_apres.jpg",
+      before: "/golf_avant.webp",
+      after: "/golf_apres.webp",
     },
   },
   {
@@ -30,8 +30,8 @@ export const services = [
       "Dressing des pneus",
     ],
     beforeAfter: {
-      before: "/porsche_avant.jpg",
-      after: "/porsche_apres.jpg",
+      before: "/porsche_avant.webp",
+      after: "/porsche_apres.webp",
     },
   },
   {
@@ -45,8 +45,8 @@ export const services = [
       "Adapté pour les voitures avec de légères traces ou les voitures neuves",
     ],
     beforeAfter: {
-      before: "/car_staging.jpg",
-      after: "/car_staging.jpg",
+      before: "/staging.webp",
+      after: "/staging.webp",
     },
   },
   {
@@ -60,8 +60,8 @@ export const services = [
       "Protection anti-taches (en option)",
     ],
     beforeAfter: {
-      before: "/canape_avant.png",
-      after: "/canape_apres.png",
+      before: "/canape_avant.webp",
+      after: "/canape_apres.webp",
     },
   },
   {
@@ -75,8 +75,8 @@ export const services = [
       "Rinçage et séchage",
     ],
     beforeAfter: {
-      before: "/terasse_avant.png",
-      after: "/terasse_apres.png",
+      before: "/terasse_avant.webp",
+      after: "/terasse_apres.webp",
     },
   },
 ];

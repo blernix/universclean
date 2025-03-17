@@ -1,46 +1,43 @@
-"use client";
 import "./globals.css";
 import { Header, Footer } from "@/components/layout";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Head from "next/head";
+import Providers from "@/components/Providers";
+
+export const metadata = {
+  metadataBase: new URL("https://univers-clean77.fr"),
+  title: "Univers Clean - Nettoyage professionnel",
+  description: "Univers Clean, spécialiste du nettoyage haut de gamme (voitures, terrasses, canapés). Service premium et sur mesure en Île-de-France.",  keywords: ["nettoyage voiture", "car staging", "nettoyage terrasse", "lavage auto", "detailing"],
+  authors: [{ name: "Univers Clean" }],
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    url: "https://univers-clean77.fr/",
+    title: "Univers Clean - Nettoyage professionnel",
+    description: "Découvrez nos services de nettoyage pour voitures, terrasses et bien plus. Univers Clean, votre expert du nettoyage.",
+    images: ["/photo_hero.webp"],
+    siteName: "Univers Clean",
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    url: "https://univers-clean77.fr/",
+    title: "Univers Clean - Nettoyage professionnel",
+    description: "Découvrez nos services de nettoyage pour voitures, terrasses et bien plus.",
+    images: ["/photo_hero.webp"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <Head>
-        {/* Meta SEO */}
-        <title>Univers Clean - Nettoyage professionnel</title>
-        <meta name="description" content="Découvrez nos services de nettoyage pour voitures, terrasses et bien plus. Univers Clean, votre expert du nettoyage." />
-        <meta name="keywords" content="nettoyage voiture, car staging, nettoyage terrasse, lavage auto, detailing" />
-        <meta name="author" content="Univers Clean" />
-        <meta name="robots" content="index, follow" />
-
-        {/* Open Graph (Facebook, LinkedIn) */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://univers-clean77.fr/" />
-        <meta property="og:title" content="Univers Clean - Nettoyage professionnel" />
-        <meta property="og:description" content="Découvrez nos services de nettoyage pour voitures, terrasses et bien plus. Univers Clean, votre expert du nettoyage." />
-        <meta property="og:image" content="/photo_hero.jpg" />
-        <meta property="og:site_name" content="Univers Clean" />
-        <meta property="og:locale" content="fr_FR" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://univers-clean77.fr/" />
-        <meta name="twitter:title" content="Univers Clean - Nettoyage professionnel" />
-        <meta name="twitter:description" content="Découvrez nos services de nettoyage pour voitures, terrasses et bien plus." />
-        <meta name="twitter:image" content="/photo_hero.jpg" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <body className="bg-neutral-900">
-        <ParallaxProvider>
+        <Providers>
           <Header />
           <main>{children}</main>
           <Footer />
-        </ParallaxProvider>
+        </Providers>
       </body>
     </html>
   );

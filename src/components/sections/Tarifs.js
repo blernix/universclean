@@ -36,8 +36,7 @@ export default function Tarifs() {
 
 function TarifCard({ service }) {
   return (
-    <Card className="bg-neutral-900 text-white shadow-xl hover:shadow-2xl transition-shadow w-full md:w-[30%] overflow-hidden rounded-xl p-8">
-      {service.beforeAfter && (
+<Card className="bg-neutral-900 text-white shadow-xl hover:shadow-2xl transition-shadow w-full md:w-[45%] lg:w-[30%] overflow-hidden rounded-xl p-8">      {service.beforeAfter && (
         <ImageCarousel before={service.beforeAfter.before} after={service.beforeAfter.after} />
       )}
       <h3 className="text-xl font-normal text-center text-primary my-4">{service.title}</h3>
@@ -58,30 +57,33 @@ function TarifCard({ service }) {
 
 // Composant du mini-carousel pour switcher entre l’image Avant et Après
 function ImageCarousel({ before, after }) {
+  const hasCarousel = before !== after; // Vérifie si les deux images sont différentes
   const [index, setIndex] = useState(0);
   const images = [before, after];
   const labels = ["Avant", "Après"];
 
   useEffect(() => {
+    if (!hasCarousel) return; // Aucun carousel nécessaire si une seule image
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
-
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images.length, hasCarousel]);
 
   return (
     <div className="relative w-full h-48 overflow-hidden rounded-md">
       <Image
-        src={images[index]}
-        alt={labels[index]}
+        src={images[hasCarousel ? index : 0]}
+        alt={hasCarousel ? labels[index] : "Illustration"}
         width={500}
         height={250}
         className="w-full h-full object-cover transition-opacity duration-700"
       />
-      <span className="absolute bottom-2 right-2 bg-black bg-opacity-50 px-3 py-1 text-xs rounded-full text-white">
-        {labels[index]}
-      </span>
+      {hasCarousel && (
+        <span className="absolute bottom-2 right-2 bg-black bg-opacity-50 px-3 py-1 text-xs rounded-full text-white">
+          {labels[index]}
+        </span>
+      )}
     </div>
   );
 }
